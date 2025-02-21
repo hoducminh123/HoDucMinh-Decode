@@ -1,0 +1,91 @@
+<html lang="vi"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Phần Thông Báo Thành Công -->
+<div class="notification" id="notification" style="display: none;">
+    <p id="notification-message"></p>
+</div>
+<!-- Logo và Tên Ứng Dụng -->
+<div class="app-header">
+    <div class="logo-container">
+        <img src="https://i.imgur.com/F6TbxnY.jpeg" alt="Logo" class="app-logo">
+        <span class="app-title">Dev Ho Duc Minh</span>
+    </div>
+<!-- Phần Hiển Thị Thông Tin Người Dùng -->
+    
+<div class="user-info" id="user-info">
+    <p><strong>Device:</strong> <span id="machine-name">Win32</span></p>
+    <p><strong>FPS:</strong> <span id="fps">60</span></p>
+</div>
+    <div class="icon-container">
+        <div class="icon">
+            <!-- Thay thế bằng ảnh bạn muốn sử dụng -->
+            <img src="https://i.imgur.com/F6TbxnY.jpeg" alt="Icon Image">
+        </div>
+        <div class="text">LOGIN LÀM MÀU</div>
+    </div>
+<!-- Phần Tạo Tài Khoản -->
+    <div class="form-container" id="signup-form">
+
+        <h2>Tạo Tài Khoản</h2>
+        <input type="text" id="signup-username" placeholder="Tên người dùng">
+        <input type="password" id="signup-password" placeholder="Mật khẩu">
+        <button onclick="createAccount()">Tạo Tài Khoản</button>
+        <p>Đã có tài khoản? <a href="javascript:void(0);" onclick="showLoginForm()">Đăng nhập</a></p>
+    </div>
+
+    <!-- Phần Đăng Nhập -->
+    <div class="form-container" id="login-form" style="display: none;">
+
+        <h2>Đăng Nhập</h2>
+        <input type="text" id="login-username" placeholder="Tên người dùng">
+        <input type="password" id="login-password" placeholder="Mật khẩu">
+        <label>
+            <input type="checkbox" id="remember-password"> Lưu mật khẩu
+        </label>
+        <button onclick="login()">Đăng Nhập</button>
+        <p>Chưa có tài khoản? <a href="javascript:void(0);" onclick="showSignupForm()">Tạo tài khoản</a></p>
+    </div>
+
+    <!-- Menu sau khi Đăng Nhập -->
+    <div class="menu-container" id="menu" style="display: none;">
+        <h2>Đây Là File Lùa Gà Không Có Tác Dụng Vậy Nên Đừng Mua File Của Ai Nhé</h2>
+        <button onclick="enterGame()">Nhập Game</button>
+        <button onclick="contactSeller()">Liên Hệ</button>
+    </div>
+
+    <!-- Phần Game -->
+    <div class="game-container" id="game" style="display: none;">
+        <h2>Nhập Game</h2>
+        <div class="game-option" onclick="showFreeFireMax()">Free Fire Max</div>
+        <div class="game-option" onclick="showFreeFire()">Free Fire</div>
+    </div>
+
+    <!-- Phần Hiển Thị Game Đã Chọn -->
+    <div class="selected-game" id="selected-game" style="display: none;">
+        <h2 id="game-name"></h2>
+        <img id="game-logo" src="" alt="Game Logo" class="game-logo">
+    </div>
+
+        
+    
+    <!-- Phần Hiệu Ứng Chuyển Đổi 
+-->
+    <div class="switch-container" id="switch-container" style="display: none;">
+        <div class="switch-option" id="switch1" onclick="toggleSwitch(1)">FPS BUFF 📈</div>
+        <div class="switch-option" id="switch2" onclick="toggleSwitch(2)"> DPI Headshot ☠️</div>
+        <div class="switch-option" id="switch3" onclick="toggleSwitch(3)">Recognize Aim ⬆️</div>
+        <div class="switch-option" id="switch4" onclick="toggleSwitch(4)">Sensitivy Mode 📲</div>
+    </div>
+
+    </div>
+
+    
+    <script src="script.js"></script>
+
+<div id="veepn-breach-alert"></div><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://panammoooggmlehahpcjckcncfeffcoi/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://panammoooggmlehahpcjckcncfeffcoi/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style><div id="veepn-guard-alert"></div><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://panammoooggmlehahpcjckcncfeffcoi/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://panammoooggmlehahpcjckcncfeffcoi/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style></body></html>
